@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WordDemo5.props" />
+</Project>

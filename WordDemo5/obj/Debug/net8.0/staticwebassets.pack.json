@@ -1,0 +1,341 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WordDemo5.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WordDemo5.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\downloads\\Document.docx",
+      "PackagePath": "staticwebassets\\downloads\\Document.docx"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\downloads\\Document_Cover.docx",
+      "PackagePath": "staticwebassets\\downloads\\Document_Cover.docx"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\612c9f8f-8132-4f2b-83db-ab7df3b373ad.jpg",
+      "PackagePath": "staticwebassets\\uploads\\612c9f8f-8132-4f2b-83db-ab7df3b373ad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\84351114-54ae-41db-826f-a2e2bca4aedf.jpg",
+      "PackagePath": "staticwebassets\\uploads\\84351114-54ae-41db-826f-a2e2bca4aedf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\ChatGPT Image 17 Nis 2025 15_01_27.png",
+      "PackagePath": "staticwebassets\\uploads\\ChatGPT Image 17 Nis 2025 15_01_27.png"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\ChatGPT Image 17 Nis 2025 15_50_31.png",
+      "PackagePath": "staticwebassets\\uploads\\ChatGPT Image 17 Nis 2025 15_50_31.png"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\DALL·E 2024-02-24 17.47.36 - fill.png",
+      "PackagePath": "staticwebassets\\uploads\\DALL·E 2024-02-24 17.47.36 - fill.png"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\Designer (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\Designer (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\Designer.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\Designer.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\file_example_XLS_10.xls",
+      "PackagePath": "staticwebassets\\uploads\\file_example_XLS_10.xls"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\fotor-ai-20250209134832.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fotor-ai-20250209134832.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\fotor-ai-20250209174225.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fotor-ai-20250209174225.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\jack-b-sV65Qzj0GQM-unsplash.jpg",
+      "PackagePath": "staticwebassets\\uploads\\jack-b-sV65Qzj0GQM-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\lost-in-space-404-1920x1080-18155.png",
+      "PackagePath": "staticwebassets\\uploads\\lost-in-space-404-1920x1080-18155.png"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\no-pain-no-gain-1920x1080-17690.jpg",
+      "PackagePath": "staticwebassets\\uploads\\no-pain-no-gain-1920x1080-17690.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\siniragi.png",
+      "PackagePath": "staticwebassets\\uploads\\siniragi.png"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\tim-goedhart-vnpTRdmtQ30-unsplash.jpg",
+      "PackagePath": "staticwebassets\\uploads\\tim-goedhart-vnpTRdmtQ30-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\wallpaperflare.com_wallpaper (2).jpg",
+      "PackagePath": "staticwebassets\\uploads\\wallpaperflare.com_wallpaper (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\myasu\\source\\repos\\WordDemo5\\WordDemo5\\wwwroot\\uploads\\wallpaperflare.com_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\uploads\\wallpaperflare.com_wallpaper.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WordDemo5.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WordDemo5.props",
+      "PackagePath": "build\\WordDemo5.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WordDemo5.props",
+      "PackagePath": "buildMultiTargeting\\WordDemo5.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WordDemo5.props",
+      "PackagePath": "buildTransitive\\WordDemo5.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

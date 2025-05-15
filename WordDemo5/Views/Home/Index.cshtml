@@ -1,0 +1,308 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .fileInput-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #CED4DA;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+</style>
+
+<div class="container">
+    <h1>Form Gönderim</h1>
+    @* Belge oluşturma işlemi bittikten sonra indirme linkinin sayfanın en üstünde görünmesini sağlamak için *@
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-success mt-3">
+            @ViewBag.Message
+            <a href="@ViewBag.FilePath" class="btn btn-link" download>Belgeyi indir</a>
+        </div>
+    }
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger mt-3">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <form asp-controller="Document" asp-action="SubmitForm" method="post" enctype="multipart/form-data">
+        <div class="mb-4 p-3 border">
+            <!-- Zorunlu Statik Alanlar -->
+            <div class="form-group">
+                <label>Üniversite Adı <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.University" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Yayın Yeri <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.PlaceofPublication" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Bilgi (Cilt, Sayı No vb.) <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.Info" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>DOI Numarası <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.DoiNumber" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Makale Başlığı <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.ArticleTitle" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Yazarlar <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.Authors" placeholder="Virgülle ayırarak giriniz" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Fakülte <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.Faculty" required>
+            </div>
+
+            <div class="mt-4 p-3 border">
+                <h5>Tarih Bilgileri <span class="text-danger">*</span></h5>
+                <div class="form-group">
+                    <label>Alınış Tarihi (Received)</label>
+                    <input type="date" class="form-control" name="coverPage.ReceivedDate" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label>Kabul Tarihi (Accepted)</label>
+                    <input type="date" class="form-control" name="coverPage.AcceptedDate" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label>Online Yayın Tarihi (Published Online)</label>
+                    <input type="date" class="form-control" name="coverPage.PublishedOnlineDate" required>
+                </div>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Anahtar Kelimeler <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="coverPage.Keywords" placeholder="Virgülle ayırarak giriniz" required>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Özet <span class="text-danger">*</span></label>
+                <textarea class="form-control" rows="4" name="coverPage.Abstract" required></textarea>
+            </div>
+        </div>
+
+        <!-- Dinamik İçerik Alanı -->
+        <div class="mt-4">
+            <h4>Dinamik İçerikler</h4>
+            <div id="form-elements-container" class="mt-2 mb-2"></div>
+        </div>
+        <button type="button" class="btn btn-dark" id="add-content-btn">Yeni içerik Ekle</button>
+
+        <button type="submit" class="btn btn-success mt-3 mb-3">Belge Oluştur</button>
+    </form>
+
+
+
+</div>
+<script>
+    document.getElementById('add-content-btn').addEventListener('click', function () {
+        const container = document.getElementById('form-elements-container');
+        const contentItemIndex = container.querySelectorAll('.content-group').length;
+
+        const groupDiv = document.createElement('div');
+        groupDiv.className = 'content-group mb-3 p-2 border';
+
+        // Başlık inputu
+        const titleInput = document.createElement('input');
+        titleInput.type = 'text';
+        titleInput.name = `ContentItems[${contentItemIndex}].Title`;
+        titleInput.placeholder = 'Başlık giriniz';
+        titleInput.className = 'form-control mt-2';
+
+        // İçerik container'ı
+        const contentContainer = document.createElement('div');
+        contentContainer.className = 'content-container mt-2';
+
+        // Güncellenmiş içerik bloğu oluşturma fonksiyonu
+        function createContentEntry(contentType, blockIndex, parentWrapper) {
+            const contentEntryDiv = document.createElement('div');
+            contentEntryDiv.className = 'content-entry mt-2 mb-2 p-2 border position-relative';
+
+            // Silme butonu
+            const deleteBtn = document.createElement('button');
+            deleteBtn.type = 'button';
+            deleteBtn.className = 'btn-close position-absolute top-0 end-0 m-2';
+            deleteBtn.setAttribute('aria-label', 'Sil');
+            deleteBtn.addEventListener('click', () => {
+                parentWrapper ? parentWrapper.remove() : contentEntryDiv.remove();
+            });
+            contentEntryDiv.appendChild(deleteBtn);
+
+            const typeInput = document.createElement('input');
+            typeInput.type = 'hidden';
+            typeInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].ContentType`;
+            typeInput.value = contentType;
+            contentEntryDiv.appendChild(typeInput);
+
+            // İçeriğe göre elementler
+            const label = document.createElement('label');
+            label.className = 'form-label mt-2';
+
+            if (contentType === "Paragraph") {
+                label.textContent = 'Paragraf:';
+                const textarea = document.createElement('textarea');
+                textarea.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].ParagraphText`;
+                textarea.placeholder = 'Paragraf giriniz';
+                textarea.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(textarea);
+            }
+            else if (contentType === "Image") {
+                label.textContent = 'Görsel Yükle:';
+                const fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].ImageFile`;
+                fileInput.accept = 'image/*';
+                fileInput.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(fileInput);
+            }
+            else if (contentType === "ImageCaption") {
+                label.textContent = 'Görsel Açıklaması:';
+                const explanationInput = document.createElement('input');
+                explanationInput.type = 'text';
+                explanationInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].ImageCaptionText`;
+                explanationInput.placeholder = 'Görsel açıklaması giriniz';
+                explanationInput.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(explanationInput);
+            }
+            else if (contentType === "TableCaption") {
+                label.textContent = 'Tablo Açıklaması:';
+                const explanationInput = document.createElement('input');
+                explanationInput.type = 'text';
+                explanationInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].TableCaptionText`;
+                explanationInput.placeholder = 'Tablo açıklaması giriniz';
+                explanationInput.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(explanationInput);
+            }
+            else if (contentType === "Table") {
+                label.textContent = 'Tablo Yükle (.xls/.xlsx):';
+                const fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].TableFile`;
+                fileInput.accept = '.xls, .xlsx';
+                fileInput.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(fileInput);
+            }
+            else if (contentType === "SubTitle") {
+                label.textContent = 'Alt Başlık:';
+                const subTitleInput = document.createElement('input');
+                subTitleInput.type = 'text';
+                subTitleInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].SubTitleText`;
+                subTitleInput.placeholder = 'Alt başlık giriniz';
+                subTitleInput.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(subTitleInput);
+            }
+            else if (contentType === "SubSubTitle") {
+                label.textContent = 'Alt Başlığa Başlık:';
+                const subSubTitleInput = document.createElement('input');
+                subSubTitleInput.type = 'text';
+                subSubTitleInput.name = `ContentItems[${contentItemIndex}].ContentBlocks[${blockIndex}].SubSubTitleText`;
+                subSubTitleInput.placeholder = 'Alt başlık için başlık giriniz';
+                subSubTitleInput.className = 'form-control';
+                contentEntryDiv.appendChild(label);
+                contentEntryDiv.appendChild(subSubTitleInput);
+            }
+
+            return contentEntryDiv;
+        }
+
+        // Butonlar için container
+        const buttonWrapper = document.createElement('div');
+        buttonWrapper.className = 'd-flex gap-2 mt-2 flex-wrap';
+
+        // Paragraf Ekle Butonu
+        const addParagraphBtn = document.createElement('button');
+        addParagraphBtn.type = 'button';
+        addParagraphBtn.textContent = 'Paragraf Ekle';
+        addParagraphBtn.className = 'btn btn-dark mt-2';
+        addParagraphBtn.addEventListener('click', function () {
+            const blockIndex = contentContainer.querySelectorAll('.content-entry').length;
+            contentContainer.appendChild(createContentEntry("Paragraph", blockIndex));
+        });
+
+        // Resim Ekle Butonu (Güncellendi)
+        const addImageBtn = document.createElement('button');
+        addImageBtn.type = 'button';
+        addImageBtn.textContent = 'Resim Ekle';
+        addImageBtn.className = 'btn btn-danger mt-2';
+        addImageBtn.addEventListener('click', function () {
+            const wrapperDiv = document.createElement('div');
+            wrapperDiv.className = 'fileInput-container border p-2 mb-2';
+
+            const blockIndex = contentContainer.children.length;
+            wrapperDiv.appendChild(createContentEntry("Image", blockIndex, wrapperDiv));
+            wrapperDiv.appendChild(createContentEntry("ImageCaption", blockIndex + 1, wrapperDiv));
+
+            contentContainer.appendChild(wrapperDiv);
+        });
+
+        // Tablo Ekle Butonu (Güncellendi)
+        const addTableBtn = document.createElement('button');
+        addTableBtn.type = 'button';
+        addTableBtn.textContent = 'Tablo Ekle';
+        addTableBtn.className = 'btn btn-info mt-2';
+        addTableBtn.addEventListener('click', function () {
+            const wrapperDiv = document.createElement('div');
+            wrapperDiv.className = 'fileInput-container border p-2 mb-2';
+
+            const blockIndex = contentContainer.children.length;
+            wrapperDiv.appendChild(createContentEntry("Table", blockIndex+1, wrapperDiv));
+            wrapperDiv.appendChild(createContentEntry("TableCaption", blockIndex, wrapperDiv));
+
+            contentContainer.appendChild(wrapperDiv);
+        });
+
+        // Alt Başlık Ekle Butonu
+        const addSubTitleBtn = document.createElement('button');
+        addSubTitleBtn.type = 'button';
+        addSubTitleBtn.textContent = 'Alt Başlık Ekle';
+        addSubTitleBtn.className = 'btn btn-secondary mt-2';
+        addSubTitleBtn.addEventListener('click', function () {
+            const blockIndex = contentContainer.querySelectorAll('.content-entry').length;
+            contentContainer.appendChild(createContentEntry("SubTitle", blockIndex));
+        });
+
+        // Alt başlığa alt başlık ekle butonu
+        const addSubSubTitleBtn = document.createElement('button');
+        addSubSubTitleBtn.type = 'button';
+        addSubSubTitleBtn.textContent = 'Alt Başlığa Başlık Ekle';
+        addSubSubTitleBtn.className = 'btn btn-success mt-2';
+        addSubSubTitleBtn.addEventListener('click', function () {
+            const blockIndex = contentContainer.querySelectorAll('.content-entry').length;
+            contentContainer.appendChild(createContentEntry("SubSubTitle", blockIndex));
+        });
+
+        // Butonları ekle
+        buttonWrapper.appendChild(addParagraphBtn);
+        buttonWrapper.appendChild(addImageBtn);
+        buttonWrapper.appendChild(addTableBtn);
+        buttonWrapper.appendChild(addSubTitleBtn);
+        buttonWrapper.appendChild(addSubSubTitleBtn);
+
+        // Elemanları grupla
+        groupDiv.appendChild(titleInput);
+        groupDiv.appendChild(contentContainer);
+        groupDiv.appendChild(buttonWrapper);
+        container.appendChild(groupDiv);
+    });
+</script>
